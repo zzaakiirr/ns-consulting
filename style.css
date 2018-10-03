@@ -5,7 +5,7 @@
 }
 
 .header-img {
-  background-image: url(source/img/header.png);
+  background-image: url(src/img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 15.7rem;
@@ -29,20 +29,41 @@
   color: white;
 }
 
-.navbar span:hover {
+.navbar a:hover {
 	border-bottom: 0.2rem solid white;
 	padding-bottom: .8rem;
 }
 
 .searcher {
+	background-color: #f8f8f8;
 	width: 97%;
 	height: 100%;
+	border: .1rem solid #f8f8f8;
+	padding-left: 1rem;
+	font-size: 1.3rem;
+}
+
+.searcher-wrapper {
+	background-color: #f8f8f8;
+	border: .1rem solid #f8f8f8;
+	margin-left: -1rem;
+	margin-bottom: -.25rem;
+}
+
+.searcher-submit-btn {
+	background-color: #f8f8f8;
+	border: none;
+	text-align: center;
+	height: 100%;
+}          
+
+.searcher-submit-btn img {
+	padding: .5rem 0;
 }
 
 .news {
-	margin-top: 2rem;
+	margin-top: 2.7rem;
 }
-
 
 .banner__left1 {
 	background-color: #CFCFCF;
@@ -50,7 +71,7 @@
 }
 
 .banners__middle .banner__middle1 {
-	background-image: url(source/img/banner__middle1.png);
+	background-image: url(src/img/banner__middle1.png);
 	background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
@@ -62,4 +83,13 @@
 
 .banners__middle .banner__middle2 img {
 	background-repeat: no-repeat;
+}
+
+.ratings img {
+	margin: 2rem 2rem;
+	margin-left: 0;
+}
+
+.ratings img:last-child {
+	margin-right: 0;
 }
