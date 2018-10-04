@@ -6,23 +6,31 @@
   <title>ns-consulting</title>
   <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
   <header>
     <div class="row header">
-      <div class="col-md-12 header-img"></div>
-    </div>
-    <div class="row center-xs navbar">
-      <div class="col-md-12">
-        <a href="">Главная</a>
-        <a href="">О союзе</a>
-        <a href="">Услуги</a>
-        <a href="">Топ-5 событий</a>
-        <a href="">Семинары</a>
-        <a href="">Контакты</a>
-        <a href="">Партнеры</a>
+      <div class="col-xs-12 img-wrapper">
+        <img src="src/img/logo.png" alt="Logo">
       </div>
     </div>
+    <nav class="row center-xs navbar" id="topNavbar">
+      <div class="col-xs-12">
+        <span>
+          <a href="javascript:void(0);" class="burger-link" onclick="showBurgerLinks()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </span>
+        <span><a href="">Главная</a></span>
+        <span><a href="">О союзе</a></span>
+        <span><a href="">Услуги</a></span>
+        <span><a href="">Топ-5 событий</a></span>
+        <span><a href="">Семинары</a></span>
+        <span><a href="">Контакты</a></span>
+        <span><a href="">Партнеры</a></span>
+      </div>
+    </nav>
   </header>
   <div class="container">
     <div class="row center-xs searcher-wrapper">
@@ -39,6 +47,7 @@
       <div class="col-lg-3">
         <div class="row center-xs banners__left">
           <div class="col-xs-10 banner__left1">
+            <p class="banner-header">Актуально</p>
             <img src="src/img/banner__left1.png" alt="banner1-img">
             <p class="banner1-text">
               Гос.программа РФ "Развитие здравоохранения 2018-2025 гг."
@@ -97,17 +106,22 @@
     </div>
   </div>
   <footer>
-    <div class="row center-xs navbar hidden-xs hidden-sm">
+    <nav class="row center-xs navbar" id="topNavbar">
       <div class="col-xs-12">
-        <a href="">Главная</a>
-        <a href="">О союзе</a>
-        <a href="">Услуги</a>
-        <a href="">Топ-5 событий</a>
-        <a href="">Семинары</a>
-        <a href="">Контакты</a>
-        <a href="">Партнеры</a>
+        <span>
+          <a href="javascript:void(0);" class="burger-link" onclick="showBurgerLinks()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </span>
+        <span><a href="">Главная</a></span>
+        <span><a href="">О союзе</a></span>
+        <span><a href="">Услуги</a></span>
+        <span><a href="">Топ-5 событий</a></span>
+        <span><a href="">Семинары</a></span>
+        <span><a href="">Контакты</a></span>
+        <span><a href="">Партнеры</a></span>
       </div>
-    </div>
+    </nav>
     <div class="container">
       <div class="row start-xs start-md start-lg">
         <div class="col-xs-12 col-md-6 col-lg-6">
@@ -121,5 +135,6 @@
       </div>
     </div>
   </footer>
+  <script src='navbarBurger.js'></script>
 </body>
 </html>
