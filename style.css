@@ -13,7 +13,6 @@
 .navbar {
   background-color: #232c3a;
   padding: 1rem 0;
-  margin-bottom: 1.7rem;
 }
 
 .navbar a {
@@ -85,7 +84,7 @@
     padding-left: .7rem;
   }
 }
- 
+
 .searcher-wrapper:hover .searcher-input {
 	-webkit-box-shadow: 0 0 .2rem #232c3a;
   -moz-box-shadow: 0 0 .2rem #232c3a;
@@ -161,14 +160,15 @@
 	background-repeat: no-repeat;
 }
 
-footer .right-col img {
+footer .right-col a {
+	display: inline-block;
 	margin: 2rem 1rem;
 }
 
-footer .right-col img:first-child {
+footer .right-col a:first-child {
 	margin-left: 0;
 }
 
-footer .right-col img:last-child {
+footer .right-col a:last-child {
 	margin-right: 0;
 }
