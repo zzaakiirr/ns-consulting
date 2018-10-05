@@ -1,4 +1,4 @@
-.header .img-wrapper {
+header .img-wrapper {
   background-image: url(src/img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .header .img-wrapper img {
-	margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .navbar {
@@ -19,28 +19,30 @@
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  padding: 0 1.8rem;
+  padding: 1rem 1.8rem;
   color: white;
 }
 
-.navbar a:link, .navbar a:visited {
+.navbar a:link,
+.navbar a:visited {
   text-decoration: none;
   color: white;
 }
 
 .navbar a:focus {
-	outline: none;
+  outline: none;
 }
 
 .navbar a:hover {
-	border-bottom: 0.3rem solid white;
-	padding-bottom: .6rem;
+  border-bottom: 0.3rem solid white;
+  padding-bottom: .6rem;
 }
+
 
 /* does it work?
 /* .navbar a:link {
-	border-bottom: 0.3rem solid #008033;
-	padding-bottom: .6rem;
+  border-bottom: 0.3rem solid #008033;
+  padding-bottom: .6rem;
 }
  */
 
@@ -49,126 +51,166 @@
 }
 
 .navbar span {
-	display: inline-block;
+  display: inline-block;
 }
 
 @media (max-width: 1153px) {
-	.navbar span:last-child {
-		margin-top: 1.3rem;
-	}
+  .navbar span:last-child {
+    margin-top: 1.3rem;
+  }
 }
 
 @media (max-width: 656px) {
-	.header .img-wrapper {
-		display: none;
-	  margin-top: -1rem;
-	}
-
+  .header .img-wrapper {
+    display: none;
+    margin-top: -1rem;
+  }
   .navbar a {
-  	display: none;
+    display: none;
   }
-
   .navbar a:hover {
-  	border: none;
-  	padding-bottom: 0;
+    border: none;
+    padding-bottom: 0;
   }
-
   .navbar span:first-child {
-  	float: left;
-  	font-size: 1.2rem;
+    float: left;
+    font-size: 1.2rem;
   }
-
   .navbar .burger-link {
     display: inline-block;
     padding: 0;
     padding-left: .7rem;
   }
+  footer .navbar {
+    display: none;
+  }
+}
+
+.searcher-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .searcher-wrapper:hover .searcher-input {
-	-webkit-box-shadow: 0 0 .2rem #232c3a;
+  -webkit-box-shadow: 0 0 .2rem #232c3a;
   -moz-box-shadow: 0 0 .2rem #232c3a;
-	box-shadow: 0 0 .2rem #232c3a;
-  clip-path: inset(-5px 0px -5px -5px);
-}
-
-.searcher-wrapper:hover .searcher-btn-wrapper {
-	-webkit-box-shadow: 0 0 .2rem #232c3a;
-  -moz-box-shadow: 0 0 .2rem #232c3a;
-	box-shadow: 0 0 .2rem #232c3a;
-  clip-path: inset(-5px -5px -5px 0px);
+  box-shadow: 0 0 .2rem #232c3a;
 }
 
 .searcher-btn-wrapper {
-	background-color: #f8f8f8;
-	border: .1rem solid #f8f8f8;
-	margin-left: -1rem;
-	margin-bottom: -.25rem;
+  background-color: #f8f8f8;
+  border: .1rem solid #f8f8f8;
+  padding-top: 0.5rem;
 }
 
 .searcher-input {
-	background-color: #f8f8f8;
-	width: 97%;
-	height: 100%;
-	border: .1rem solid #f8f8f8;
-	padding-left: 1.1rem;
-	font-size: 1.3rem;
+  background-color: #f8f8f8;
+  width: 108.7%;
+  height: 100%;
+  border: .1rem solid #f8f8f8;
+  padding-left: 1.1rem;
+  margin-right: 0;
+  font-size: 1.3rem;
 }
 
 .searcher-submit-btn {
-	background-color: #f8f8f8;
-	border: none;
-	text-align: center;
-	height: 100%;
+  background-color: #f8f8f8;
+  border: none;
+  text-align: center;
 }
 
 .searcher-submit-btn img {
-	padding: .5rem 0;
+  padding: .5rem 0;
 }
 
+.searcher,
 .main {
-	margin-top: 2.3rem;
+  margin-top: 2.3rem;
 }
 
-.banner-left-top {
-	background-color: #f8f8f8;
-	margin: 0 0.8rem;
-}
-
-.banner-left-top img {
-	padding: 1.3rem 0;
-}
-
-.banner-left-top .banner-header {
-	font-size: 1.3rem; 
-	font-weight: bold;
-  text-transform: uppercase;
-}
-
-.banners-center .banner-center-top {
-	background-image: url(src/img/banner-center-top.png);
-	background-repeat: no-repeat;
-  background-size: 100%;
+.text-under-img-wrapper {
+  position: relative;
   height: 100%;
 }
 
-.banners-center .banner1-text {
-	padding-top: 10rem;
+.text-under-img-wrapper > img {
+  width: 100%;
+  margin-bottom: -.27rem;
 }
 
-.banners-center .banner-center-center img {
-	background-repeat: no-repeat;
+.text-under-img-wrapper > div {
+  position: absolute;
+  bottom: 50%;
+}
+
+.banner-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div[class*="banner-left"], div[class*="banner-right"] {
+  margin-bottom: 1.25rem;
+}
+
+.banner-left-top {
+  background-color: #f8f8f8;
+}
+
+.banner-left-top img {
+  padding: 1.3rem 0;
+}
+
+.banner-left-center {
+  background-color: #1c1c40;
+  color: white;
+}
+
+.banner-left-bottom {
+  padding: 0;
+}
+
+.banner-center-center > div {
+  position: relative;
+}
+
+.banners-center div {
+  padding: 0;
+}
+
+.banner-center-center .banner-content {
+  background-color: #f8f8f8;
+}
+
+.banner-center-center .banner-header {
+  margin-top: 0;
+}
+
+.banners-right > div {
+  background-color: #f8f8f8;
+}
+
+.banner-right-top {
+  padding: 0 0;
+}
+
+.banner-right-top img {
+  max-width: 100%;
+}
+
+.banners-center {
+  padding: 0;
 }
 
 footer .right-col a {
-	display: inline-block;
-	margin: 2rem 1rem;
+  display: inline-block;
+  margin: 2rem 1rem;
 }
 
 footer .right-col a:first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 footer .right-col a:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
