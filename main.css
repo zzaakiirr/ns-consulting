@@ -69,38 +69,6 @@ header .img-wrapper {
   display: inline-block;
 }
 
-@media (max-width: 1153px) {
-  .navbar span:last-child {
-    margin-top: 1.3rem;
-  }
-}
-
-@media (max-width: 656px) {
-  .header .img-wrapper {
-    display: none;
-    margin-top: -1rem;
-  }
-  .navbar a {
-    display: none;
-  }
-  .navbar a:hover {
-    border: none;
-    padding-bottom: 0;
-  }
-  .navbar span:first-child {
-    float: left;
-    font-size: 1.2rem;
-  }
-  .navbar .burger-link {
-    display: inline-block;
-    padding: 0;
-    padding-left: .7rem;
-  }
-  footer .navbar {
-    display: none;
-  }
-}
-
 .searcher-wrapper {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -114,13 +82,13 @@ header .img-wrapper {
 
 .searcher-btn-wrapper {
   background-color: #f8f8f8;
-  border: .1rem solid #f8f8f8;
   position: relative;
   right: 1%;
   padding: 0;
   padding-top: 0.5rem;
-  width: 100px  ;
   max-width: 50%;
+  margin-top: .1rem;
+  margin-bottom: .1rem;
 }
 
 .searcher-input {
@@ -130,14 +98,12 @@ header .img-wrapper {
   height: 100%;
   border: .1rem solid #f8f8f8;
   padding-left: 1.1rem;
-  margin-right: 0;
   font-size: 1.3rem;
 }
 
 .searcher-submit-btn {
   background-color: #f8f8f8;
   border: none;
-  text-align: center;
 }
 
 .searcher-submit-btn img {
@@ -194,7 +160,7 @@ div[class*="banner-center"] {
 }
 
 .banner-left-top .banner-text {
-  display: inline-block;
+  display: block;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -334,15 +300,7 @@ footer .right-col {
   margin-top: 4rem;
 }
 
-footer .right-col a {
+footer .right-col a:not(:first-child):not(:last-child) {
   display: inline-block;
   margin: 1rem 1rem;
-}
-
-footer .right-col a:first-child {
-  margin-left: 0;
-}
-
-footer .right-col a:last-child {
-  margin-right: 0;
 }
