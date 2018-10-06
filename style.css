@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Intro-Book;
+  src: url(src/fonts/Intro-Book.otf);
+}
+
+@font-face {
+  font-family: Intro-Bold;
+  src: url(src/fonts/Intro-Bold.ttf);
+}
+
+html {
+  font-family: Intro-Book;
+}
+
 header .img-wrapper {
   background-image: url(src/img/header.png);
   background-repeat: no-repeat;
@@ -11,6 +25,7 @@ header .img-wrapper {
 }
 
 .navbar {
+  font-size: 1.125rem;
   background-color: #232c3a;
   padding: 1rem 0;
 }
@@ -140,42 +155,67 @@ header .img-wrapper {
 
 .text-under-img-wrapper > div {
   position: absolute;
-  bottom: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+div[class*="banner-left"], div[class*="banner-right"] {
+  margin-bottom: 1.3rem;
+}
+
+div[class*="banner-center"] {
+  padding: 0;
+}
+
+.banner-content {
+  padding-left: 0.3rem; 
+  padding-right: 0.3rem; 
 }
 
 .banner-header {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-family: Intro-Bold;
   text-transform: uppercase;
-}
-
-div[class*="banner-left"], div[class*="banner-right"] {
-  margin-bottom: 1.25rem;
 }
 
 .banner-left-top {
   background-color: #f8f8f8;
 }
 
-.banner-left-top img {
-  padding: 1.3rem 0;
+.banner-left-top .banner-text {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .banner-left-center {
   background-color: #1c1c40;
   color: white;
+  padding: 1rem 1.5rem;
+}
+
+.banner-left-center .angle-down {
+  display: inline-block;
+  background: no-repeat url(src/img/angle-down.png);
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 25px;
+  height: 11px;
 }
 
 .banner-left-bottom {
   padding: 0;
+  color: white;
+}
+
+.banner-left-bottom a.banner-header {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .banner-center-center > div {
   position: relative;
-}
-
-.banners-center div {
-  padding: 0;
 }
 
 .banner-center-center .banner-content {
