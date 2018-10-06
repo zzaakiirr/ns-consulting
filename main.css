@@ -17,7 +17,7 @@ header .img-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  margin-top: -1rem;
+  margin-top: -0.9rem;
 }
 
 .header .img-wrapper img {
@@ -138,9 +138,9 @@ header .img-wrapper {
   padding: .5rem 0;
 }
 
-.searcher,
-.main {
-  margin-top: 2.3rem;
+.main,
+.banners {
+  margin-top: 1.8rem;
 }
 
 .text-under-img-wrapper {
@@ -160,7 +160,8 @@ header .img-wrapper {
   right: 0;
 }
 
-div[class*="banner-left"], div[class*="banner-right"] {
+div[class*="banner-left"],
+div[class*="banner-right"] {
   margin-bottom: 1.3rem;
 }
 
@@ -214,6 +215,10 @@ div[class*="banner-center"] {
   margin-bottom: 1rem;
 }
 
+.banners-center {
+  padding: 0;
+}
+
 .banner-center-center > div {
   position: relative;
 }
@@ -226,7 +231,7 @@ div[class*="banner-center"] {
 
 .banner-center-top .banner-header {
   font-size: 1.7rem;
-  margin: 0 0;
+  margin: 0;
 }
 
 .banner-center-top .banner-text {
@@ -235,10 +240,24 @@ div[class*="banner-center"] {
 
 .banner-center-center .banner-content {
   background-color: #f8f8f8;
+  padding: 0.7rem 1rem;
 }
 
 .banner-center-center .banner-header {
-  margin-top: 0;
+  margin: 0;
+}
+
+.banner-center-center .banner-text {
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+}
+
+.banner-header-2 {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: .7rem;
+  margin-bottom: 0;
 }
 
 .banners-right > div {
@@ -246,15 +265,64 @@ div[class*="banner-center"] {
 }
 
 .banner-right-top {
-  padding: 0 0;
+  padding: 0;
+}
+
+.banner-right-top .banner-content {
+  padding: 0 1rem;
+}
+
+.banner-right-top .banner-text {
+  margin-top: .3rem;
 }
 
 .banner-right-top img {
   max-width: 100%;
 }
 
-.banners-center {
+.banner-right-center {
   padding: 0;
+}
+
+.banner-right-center .banner-content {
+  padding: 0 1rem;
+}
+
+.banner-right-center .banner-text {
+  padding: 0 .4rem;
+}
+
+.banner-right-center .poll-choice {
+  margin-left: 1rem;
+}
+
+.submit-btn {
+  max-width: 100%;
+  width: 9999px;
+  background-color: #232c3a;
+  padding:  .5rem 0;
+  border: none;
+  font-family: Intro-Bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.footer .left-col {
+  padding-left: 1.5rem;
+  font-size: 0.8rem; 
+}
+
+.footer .right-col {
+  padding-right: 1.5rem;
+}
+
+footer {
+  margin-top: 4rem;
 }
 
 footer .right-col a {
