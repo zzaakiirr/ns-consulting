@@ -38,13 +38,12 @@ header .img-wrapper {
   color: white;
 }
 
-.navbar a:link,
-.navbar a:visited {
+a:link, a:visited {
   text-decoration: none;
   color: white;
 }
 
-.navbar a:focus {
+a:focus {
   outline: none;
 }
 
@@ -144,6 +143,10 @@ div[class*="banner-center"] {
   padding: 0;
 }
 
+.banners a:hover {
+  text-decoration: underline;
+}
+
 .banner-content {
   padding-left: 0.3rem; 
   padding-right: 0.3rem; 
@@ -160,6 +163,7 @@ div[class*="banner-center"] {
 }
 
 .banner-left-top .banner-text {
+  color: black;
   display: block;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -198,6 +202,10 @@ div[class*="banner-center"] {
   position: relative;
 }
 
+.banner-center-center a.banner-header {
+  color: black;
+}
+
 .banner-center-top .banner-content {
   padding: 0.5rem 1.5rem;
   padding-right: 10rem;
@@ -227,12 +235,13 @@ div[class*="banner-center"] {
   font-size: 0.8rem;
 }
 
-.banner-header-2 {
+a.banner-header-2 {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: .7rem;
   margin-bottom: 0;
+  color: black;
 }
 
 .banners-right > div {
