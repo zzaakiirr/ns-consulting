@@ -5,26 +5,33 @@
 }
 
 @media (max-width: 660px) {
-  .header .img-wrapper {
+  .header {
     display: none;
-    margin-top: -1rem;
   }
+
+  .navbar {
+    padding: 0;
+    margin-top: -0.47rem;
+  }
+
   .navbar a {
     display: none;
   }
+
   .navbar a:hover {
     border: none;
     padding-bottom: 0;
   }
-  .navbar span:first-child {
+
+  .navbar .hamburger{
     float: left;
-    font-size: 1.2rem;
-  }
-  .navbar .burger-link {
     display: inline-block;
-    padding: 0;
-    padding-left: .7rem;
   }
+
+  .navbar .hamburger:focus {
+    outline: none;
+  }
+
   #bottomNavbar {
     display: none;
   }
@@ -94,6 +101,20 @@
 
   .banner-center-top .banner-content {
     padding-right: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .searcher-input {
+    left: -7.4%;
+  }
+
+  .searcher-input {
+    width: 128.8%;
+  }
+
+  .searcher-btn-wrapper {
+    right: -3%;
   }
 }
 

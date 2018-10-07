@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="media_queries.css">
   <link rel="stylesheet" href="radio_style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="hamburgers.css" rel="stylesheet" >
 </head>
 <body>
   <header>
@@ -17,13 +18,13 @@
         <img src="src/img/logo.png" alt="Logo">
       </div>
     </div>
-    <nav class="row center-xs" id="topNavbar">
-      <div class="col-xs-12 navbar">
-        <span>
-          <a href="javascript:void(0);" class="burger-link" onclick="showBurgerLinks()">
-            <i class="fas fa-bars"></i>
-          </a>
-        </span>
+    <nav class="row center-xs navbar" id="topNavbar">
+      <div class="col-xs-12">
+        <button class="hamburger hamburger--spin" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <span><a href="">Главная</a></span>
         <span><a href="">О союзе</a></span>
         <span><a href="">Услуги</a></span>
@@ -31,6 +32,29 @@
         <span><a href="">Семинары</a></span>
         <span><a href="">Контакты</a></span>
         <span><a href="">Партнеры</a></span>
+      </div>
+    </nav>
+    <nav class="row hidden-md start-xs navbar" id="topNavbarSM">
+      <div class="col-xs-12 navbar-item">
+        <a href="">Главная</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">О союзе</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Услуги</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Топ-5 событий</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Семинары</a>
+      </div>
+      <div class="col-xs-12 navbar-item">
+        <a href="">Контакты</a>
+      </div>
+      <div class="col-xs-12">
+        <a href="">Партнеры</a>
       </div>
     </nav>
   </header>
@@ -138,11 +162,6 @@
   </div>
   <nav class="row center-xs navbar" id="bottomNavbar">
     <div class="col-xs-12">
-      <span>
-        <a href="javascript:void(0);" class="burger-link" onclick="showBurgerLinks()">
-          <i class="fas fa-bars"></i>
-        </a>
-      </span>
       <span><a href="">Главная</a></span>
       <span><a href="">О союзе</a></span>
       <span><a href="">Услуги</a></span>
