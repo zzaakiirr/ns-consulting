@@ -40,7 +40,6 @@ header .img-wrapper {
 
 a:link, a:visited {
   text-decoration: none;
-  color: #fff;
 }
 
 .navbar a:hover, nav.is-active a:hover {
@@ -129,9 +128,10 @@ a:link, a:visited {
   position: relative;
 }
 
-.text-under-img-wrapper > img {
-  margin-bottom: -.27rem;
+.text-under-img-wrapper > img,
+.banner-center-center > img  {
   width: 100%;
+  margin-bottom: -.31rem;
 }
 
 .text-under-img-wrapper > div {
@@ -141,25 +141,23 @@ a:link, a:visited {
   right: 0;
 }
 
-div[class*="banner-left"],
-div[class*="banner-right"] {
+a[class*="banner-left"],
+a[class*="banner-right"],
+.banner-center-center {
   margin-bottom: 1.3rem;
 }
 
-div[class*="banner-center"],
+a[class*="banner-center"],
+.banner-left-bottom,
+.banners-center,
 .banner-right-top,
-.banners-center, 
 .banner-right-center {
   padding: 0;
 }
 
-.banners a:hover {
-  text-decoration: underline;
-}
-
 .banner-content {
-  padding-left: 0.3rem; 
-  padding-right: 0.3rem; 
+  padding-left: .3rem; 
+  padding-right: .3rem; 
 }
 
 .banner-header {
@@ -172,8 +170,19 @@ div[class*="banner-center"],
   background-color: #f8f8f8;
 }
 
-.banner-left-top .banner-text {
+.banner-right-top .banner-content,
+.banner-center-center .banner-content,
+.banner-left-top .banner-content {
   color: #000;
+}
+
+.banner-left-bottom,
+.banner-left-center,
+.banner-center-top {
+  color: #fff;
+}
+
+.banner-left-top .banner-text {
   display: block;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -181,7 +190,6 @@ div[class*="banner-center"],
 
 .banner-left-center {
   background-color: #1c1c40;
-  color: #fff;
   padding: 1rem 1.5rem;
 }
 
@@ -192,33 +200,24 @@ div[class*="banner-center"],
   width: 25px;
 }
 
-.banner-left-bottom {
-  color: #fff;
-  padding: 0;
-}
-
 .banner-left-bottom a.banner-header {
   display: inline-block;
   margin-bottom: 1rem;
 }
 
-.banner-center-center > div {
-  position: relative;
+.banner-center-center > img {
+  width: 100%;
+  margin-bottom: -.33rem;
 }
 
-.banner-center-center a.banner-header {
-  color: #000;
+.banner-center-top .banner-header,
+.banner-center-center p.banner-header {
+  margin: 0;
 }
 
 .banner-center-top .banner-content {
-  color: #fff;
-  padding: 0.5rem 1.5rem;
+  padding: .5rem 1.5rem;
   padding-right: 10rem;
-}
-
-.banner-center-top .banner-header
-.banner-center-center .banner-header {
-  margin: 0;
 }
 
 .banner-center-top .banner-header {
@@ -226,21 +225,20 @@ div[class*="banner-center"],
 }
 
 .banner-center-top .banner-text {
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 .banner-center-center .banner-content {
   background-color: #f8f8f8;
-  padding: 0.7rem 1rem;
+  padding: .7rem 1rem;
 }
 
 .banner-center-center .banner-text {
-  font-size: 0.8rem;
-  margin: 0.3rem 0;
+  font-size: .8rem;
+  margin: .3rem 0;
 }
 
-a.banner-header-2 {
-  color: #000;
+p.banner-header-2 {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
@@ -248,7 +246,8 @@ a.banner-header-2 {
   margin-bottom: 0;
 }
 
-.banners-right > div {
+.banners-right > div,
+.banners-right > a {
   background-color: #f8f8f8;
 }
 
