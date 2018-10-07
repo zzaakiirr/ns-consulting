@@ -1,32 +1,12 @@
-@media (max-width: 1153px) {
-  .navbar span:last-child {
-    margin-top: 1.3rem;
+@media (max-width: 1199px) {
+  .searcher-wrapper {
+    margin-left: -.8rem;
   }
 }
 
-@media (max-width: 660px) {
-  .header .img-wrapper {
-    display: none;
-    margin-top: -1rem;
-  }
-  .navbar a {
-    display: none;
-  }
-  .navbar a:hover {
-    border: none;
-    padding-bottom: 0;
-  }
-  .navbar span:first-child {
-    float: left;
-    font-size: 1.2rem;
-  }
-  .navbar .burger-link {
-    display: inline-block;
-    padding: 0;
-    padding-left: .7rem;
-  }
-  #bottomNavbar {
-    display: none;
+@media (max-width: 1153px) {
+  .navbar span:last-child {
+    margin-top: 1.3rem;
   }
 }
 
@@ -55,8 +35,8 @@
   }
 
   .searcher-input {
-    width: 141%;
     left: -5%;
+    width: 141%;
   }
 
   .searcher-btn-wrapper {
@@ -64,16 +44,39 @@
   }
 }
 
-@media (max-width: 1199px) {
-  .searcher-wrapper {
-    margin-left: -.8rem;
+@media (max-width: 660px) {
+  .header {
+    display: none;
+  }
+
+  .navbar {
+    margin-top: -0.47rem;
+    padding: 0;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  .navbar a:hover {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .navbar .hamburger {
+    display: block;
+    float: left;
+  }
+
+  #bottomNavbar {
+    display: none;
   }
 }
 
 @media (max-width: 575px) {
   .searcher-input {
-    width: 126%;
     margin-left: .15rem;
+    width: 126%;
   }
 
   .searcher-btn-wrapper {
@@ -94,6 +97,20 @@
 
   .banner-center-top .banner-content {
     padding-right: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .searcher-input {
+    left: -7.4%;
+  }
+
+  .searcher-input {
+    width: 128.8%;
+  }
+
+  .searcher-btn-wrapper {
+    right: -3%;
   }
 }
 
