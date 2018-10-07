@@ -1,39 +1,12 @@
-@media (max-width: 1153px) {
-  .navbar span:last-child {
-    margin-top: 1.3rem;
+@media (max-width: 1199px) {
+  .searcher-wrapper {
+    margin-left: -.8rem;
   }
 }
 
-@media (max-width: 660px) {
-  .header {
-    display: none;
-  }
-
-  .navbar {
-    padding: 0;
-    margin-top: -0.47rem;
-  }
-
-  .navbar a {
-    display: none;
-  }
-
-  .navbar a:hover {
-    border: none;
-    padding-bottom: 0;
-  }
-
-  .navbar .hamburger{
-    float: left;
-    display: inline-block;
-  }
-
-  .navbar .hamburger:focus {
-    outline: none;
-  }
-
-  #bottomNavbar {
-    display: none;
+@media (max-width: 1153px) {
+  .navbar span:last-child {
+    margin-top: 1.3rem;
   }
 }
 
@@ -62,8 +35,8 @@
   }
 
   .searcher-input {
-    width: 141%;
     left: -5%;
+    width: 141%;
   }
 
   .searcher-btn-wrapper {
@@ -71,16 +44,39 @@
   }
 }
 
-@media (max-width: 1199px) {
-  .searcher-wrapper {
-    margin-left: -.8rem;
+@media (max-width: 660px) {
+  .header {
+    display: none;
+  }
+
+  .navbar {
+    margin-top: -0.47rem;
+    padding: 0;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  .navbar a:hover {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .navbar .hamburger {
+    display: block;
+    float: left;
+  }
+
+  #bottomNavbar {
+    display: none;
   }
 }
 
 @media (max-width: 575px) {
   .searcher-input {
-    width: 126%;
     margin-left: .15rem;
+    width: 126%;
   }
 
   .searcher-btn-wrapper {

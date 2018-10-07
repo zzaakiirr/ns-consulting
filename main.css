@@ -16,8 +16,8 @@ header .img-wrapper {
   background-image: url(src/img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   margin-top: -0.9rem;
+  text-align: center;
 }
 
 .header .img-wrapper img {
@@ -25,30 +25,26 @@ header .img-wrapper {
 }
 
 .navbar {
-  font-size: 1.125rem;
   background-color: #232c3a;
+  font-size: 1.125rem;
   padding: 1rem 0;
 }
 
 .navbar a {
+  color: #fff;
+  padding: 1rem 1.84rem;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  padding: 1rem 1.8rem;
-  color: white;
 }
 
 a:link, a:visited {
   text-decoration: none;
-  color: white;
-}
-
-a:focus {
-  outline: none;
+  color: #fff;
 }
 
 .navbar a:hover, nav.is-active a:hover {
-  border-bottom: 0.3rem solid white;
+  border-bottom: 0.3rem solid #fff;
   padding-bottom: .6rem;
 }
 
@@ -92,23 +88,23 @@ a:focus {
 
 .searcher-btn-wrapper {
   background-color: #f8f8f8;
-  position: relative;
-  right: 1%;
+  margin-bottom: .1rem;
+  margin-top: .1rem;
+  max-width: 50%;
   padding: 0;
   padding-top: 0.5rem;
-  max-width: 50%;
-  margin-top: .1rem;
-  margin-bottom: .1rem;
+  position: relative;
+  right: 1%;
 }
 
 .searcher-input {
-  position: relative;
   background-color: #f8f8f8;
-  width: 107.4%;
-  height: 100%;
   border: .1rem solid #f8f8f8;
-  padding-left: 1.1rem;
   font-size: 1.3rem;
+  height: 100%;
+  padding-left: 1.1rem;
+  position: relative;
+  width: 107.4%;
 }
 
 .searcher-submit-btn {
@@ -129,19 +125,19 @@ a:focus {
 }
 
 .text-under-img-wrapper {
-  position: relative;
   height: 100%;
+  position: relative;
 }
 
 .text-under-img-wrapper > img {
-  width: 100%;
   margin-bottom: -.27rem;
+  width: 100%;
 }
 
 .text-under-img-wrapper > div {
-  position: absolute;
   bottom: 0;
   left: 0;
+  position: absolute;
   right: 0;
 }
 
@@ -150,7 +146,10 @@ div[class*="banner-right"] {
   margin-bottom: 1.3rem;
 }
 
-div[class*="banner-center"] {
+div[class*="banner-center"],
+.banner-right-top,
+.banners-center, 
+.banner-right-center {
   padding: 0;
 }
 
@@ -164,8 +163,8 @@ div[class*="banner-center"] {
 }
 
 .banner-header {
-  font-size: 1.3rem;
   font-family: Intro-Bold;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 
@@ -174,30 +173,28 @@ div[class*="banner-center"] {
 }
 
 .banner-left-top .banner-text {
-  color: black;
+  color: #000;
   display: block;
-  margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .banner-left-center {
   background-color: #1c1c40;
-  color: white;
+  color: #fff;
   padding: 1rem 1.5rem;
 }
 
 .banner-left-center .angle-down {
-  display: inline-block;
   background: no-repeat url(src/img/angle-down.png);
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 25px;
+  display: inline-block;
   height: 11px;
+  width: 25px;
 }
 
 .banner-left-bottom {
+  color: #fff;
   padding: 0;
-  color: white;
 }
 
 .banner-left-bottom a.banner-header {
@@ -205,27 +202,27 @@ div[class*="banner-center"] {
   margin-bottom: 1rem;
 }
 
-.banners-center {
-  padding: 0;
-}
-
 .banner-center-center > div {
   position: relative;
 }
 
 .banner-center-center a.banner-header {
-  color: black;
+  color: #000;
 }
 
 .banner-center-top .banner-content {
+  color: #fff;
   padding: 0.5rem 1.5rem;
   padding-right: 10rem;
-  color: white;
+}
+
+.banner-center-top .banner-header
+.banner-center-center .banner-header {
+  margin: 0;
 }
 
 .banner-center-top .banner-header {
   font-size: 1.7rem;
-  margin: 0;
 }
 
 .banner-center-top .banner-text {
@@ -237,33 +234,26 @@ div[class*="banner-center"] {
   padding: 0.7rem 1rem;
 }
 
-.banner-center-center .banner-header {
-  margin: 0;
-}
-
 .banner-center-center .banner-text {
-  margin: 0.3rem 0;
   font-size: 0.8rem;
+  margin: 0.3rem 0;
 }
 
 a.banner-header-2 {
+  color: #000;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: .7rem;
   margin-bottom: 0;
-  color: black;
 }
 
 .banners-right > div {
   background-color: #f8f8f8;
 }
 
-.banner-right-top {
-  padding: 0;
-}
-
-.banner-right-top .banner-content {
+.banner-right-top .banner-content,
+.banner-right-center .banner-content {
   padding: 0 1rem;
 }
 
@@ -275,14 +265,6 @@ a.banner-header-2 {
   max-width: 100%;
 }
 
-.banner-right-center {
-  padding: 0;
-}
-
-.banner-right-center .banner-content {
-  padding: 0 1rem;
-}
-
 .banner-right-center .banner-text {
   padding: 0 .4rem;
 }
@@ -292,15 +274,15 @@ a.banner-header-2 {
 }
 
 .submit-btn {
-  max-width: 100%;
-  width: 9999px;
   background-color: #232c3a;
-  padding:  .5rem 0;
   border: none;
+  color: #fff;
   font-family: Intro-Bold;
-  text-transform: uppercase;
-  color: white;
   font-size: 1rem;
+  max-width: 100%;
+  padding:  .5rem 0;
+  text-transform: uppercase;
+  width: 9999px;
 }
 
 .submit-btn:hover {
@@ -308,8 +290,8 @@ a.banner-header-2 {
 }
 
 footer .left-col {
-  padding-left: 1.5rem;
   font-size: 0.8rem; 
+  padding-left: 1.5rem;
 }
 
 footer .right-col {
