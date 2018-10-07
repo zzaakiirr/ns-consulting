@@ -17,7 +17,7 @@ header .img-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  margin-top: -0.9rem;
+  margin-top: -.9rem;
 }
 
 .header .img-wrapper img {
@@ -35,12 +35,11 @@ header .img-wrapper {
   text-transform: uppercase;
   width: 100%;
   padding: 1rem 1.8rem;
-  color: white;
+  color: #fff;
 }
 
 a:link, a:visited {
   text-decoration: none;
-  color: white;
 }
 
 a:focus {
@@ -48,14 +47,14 @@ a:focus {
 }
 
 .navbar a:hover {
-  border-bottom: 0.3rem solid white;
+  border-bottom: .3rem solid #fff;
   padding-bottom: .6rem;
 }
 
 
 /* does it work?
 /* .navbar a:link {
-  border-bottom: 0.3rem solid #008033;
+  border-bottom: .3rem solid #008033;
   padding-bottom: .6rem;
 }
  */
@@ -84,7 +83,7 @@ a:focus {
   position: relative;
   right: 1%;
   padding: 0;
-  padding-top: 0.5rem;
+  padding-top: .5rem;
   max-width: 50%;
   margin-top: .1rem;
   margin-bottom: .1rem;
@@ -122,9 +121,10 @@ a:focus {
   height: 100%;
 }
 
-.text-under-img-wrapper > img {
+.text-under-img-wrapper > img,
+.banner-center-center > img  {
   width: 100%;
-  margin-bottom: -.27rem;
+  margin-bottom: -.31rem;
 }
 
 .text-under-img-wrapper > div {
@@ -134,22 +134,23 @@ a:focus {
   right: 0;
 }
 
-div[class*="banner-left"],
-div[class*="banner-right"] {
+a[class*="banner-left"],
+a[class*="banner-right"],
+.banner-center-center {
   margin-bottom: 1.3rem;
 }
 
-div[class*="banner-center"] {
+a[class*="banner-center"],
+.banner-left-bottom,
+.banners-center,
+.banner-right-top,
+.banner-right-center {
   padding: 0;
 }
 
-.banners a:hover {
-  text-decoration: underline;
-}
-
 .banner-content {
-  padding-left: 0.3rem; 
-  padding-right: 0.3rem; 
+  padding-left: .3rem; 
+  padding-right: .3rem; 
 }
 
 .banner-header {
@@ -162,8 +163,19 @@ div[class*="banner-center"] {
   background-color: #f8f8f8;
 }
 
+.banner-right-top .banner-text,
+.banner-center-center .banner-content,
+.banner-left-top .banner-content {
+  color: #000;
+}
+
+.banner-left-bottom,
+.banner-left-center,
+.banner-center-top {
+  color: #fff;
+}
+
 .banner-left-top .banner-text {
-  color: black;
   display: block;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -171,7 +183,6 @@ div[class*="banner-center"] {
 
 .banner-left-center {
   background-color: #1c1c40;
-  color: white;
   padding: 1rem 1.5rem;
 }
 
@@ -184,75 +195,60 @@ div[class*="banner-center"] {
   height: 11px;
 }
 
-.banner-left-bottom {
-  padding: 0;
-  color: white;
-}
-
 .banner-left-bottom a.banner-header {
   display: inline-block;
   margin-bottom: 1rem;
 }
 
-.banners-center {
-  padding: 0;
+.banner-center-center > img {
+  width: 100%;
+  margin-bottom: -.33rem;
 }
 
-.banner-center-center > div {
-  position: relative;
-}
-
-.banner-center-center a.banner-header {
-  color: black;
+.banner-center-top .banner-header,
+.banner-center-center p.banner-header {
+  margin: 0;
 }
 
 .banner-center-top .banner-content {
-  padding: 0.5rem 1.5rem;
+  padding: .5rem 1.5rem;
   padding-right: 10rem;
-  color: white;
 }
 
 .banner-center-top .banner-header {
   font-size: 1.7rem;
-  margin: 0;
 }
 
 .banner-center-top .banner-text {
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 .banner-center-center .banner-content {
   background-color: #f8f8f8;
-  padding: 0.7rem 1rem;
-}
-
-.banner-center-center .banner-header {
-  margin: 0;
+  padding: .7rem 1rem;
 }
 
 .banner-center-center .banner-text {
-  margin: 0.3rem 0;
-  font-size: 0.8rem;
+  margin: .3rem 0;
+  font-size: .8rem;
 }
 
-a.banner-header-2 {
+p.banner-header-2 {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: .7rem;
   margin-bottom: 0;
-  color: black;
+  color: #000;
 }
 
-.banners-right > div {
+.banners-right > div,
+.banners-right > a {
   background-color: #f8f8f8;
 }
 
-.banner-right-top {
-  padding: 0;
-}
-
-.banner-right-top .banner-content {
+.banner-right-top .banner-content,
+.banner-right-center .banner-content {
   padding: 0 1rem;
 }
 
@@ -262,14 +258,6 @@ a.banner-header-2 {
 
 .banner-right-top img {
   max-width: 100%;
-}
-
-.banner-right-center {
-  padding: 0;
-}
-
-.banner-right-center .banner-content {
-  padding: 0 1rem;
 }
 
 .banner-right-center .banner-text {
@@ -288,7 +276,7 @@ a.banner-header-2 {
   border: none;
   font-family: Intro-Bold;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   font-size: 1rem;
 }
 
@@ -298,7 +286,7 @@ a.banner-header-2 {
 
 footer .left-col {
   padding-left: 1.5rem;
-  font-size: 0.8rem; 
+  font-size: .8rem; 
 }
 
 footer .right-col {
