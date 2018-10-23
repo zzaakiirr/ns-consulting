@@ -14,6 +14,7 @@
   .navbar span:last-child {
     margin-top: 1.3rem;
   }
+
   .topNavbar {
     margin-bottom: -1.7rem;
   }
@@ -42,6 +43,11 @@
     float: left;
   }
 
+  .banners-right:not(:first-child) {
+    padding-left: 2.2rem;
+    padding-right: 0;
+  }
+
   #bottomNavbar {
     display: none;
   }
@@ -50,12 +56,20 @@
 @media (max-width: 767px) {
   .banners-left,
   .banners-center,
-  .banners-right {
+  .banners-right:first-child {
     padding: 0;
   }
 }
 
 @media (max-width: 453px) {
+  .banners-right, .banners-left {
+    font-size: .8rem;
+  }
+
+  .poll-choice {
+    margin-left: .5rem;
+  }
+
   .banner-center-top .banner-header {
     font-size: 1.3rem;
   }
@@ -93,4 +107,19 @@
   .banner-center-top {
     display: none;
   }
+}
+
+@media (max-width: 991px) {
+  footer .left-col {
+    padding-left: 0;
+  }
+
+  footer .right-col {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .right-col {
+    padding-left: 0;
 }
