@@ -1,53 +1,6 @@
-@media (min-width: 1200px) {
-  .headerMD {
-    display: none;
-  }
-}
 @media (max-width: 1145px) {
   #topNavbar span:last-child, #bottomNavbar span:last-child {
     margin-top: 1.3rem;
-  }
-}
-@media (max-width: 991px) {
-  .navbar span:last-child {
-    margin-top: 1.3rem;
-  }
-  .topNavbar {
-    margin-bottom: -1.7rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .searcher-input {
-    left: -3%;
-    width: 112.8%;
-  }
-
-  .searcher-btn-wrapper {
-    right: -.8%;
-  }
-
-  footer .left-col {
-    padding-left: 0;
-  }
-
-  footer .right-col {
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  footer .right-col {
-    padding-left: 0;
-  }
-
-  .searcher-input {
-    left: -5%;
-    width: 141%;
-  }
-
-  .searcher-btn-wrapper {
-    right: -18%;
   }
 }
 
@@ -58,6 +11,13 @@
 }
 
 @media (max-width: 991px) {
+  .navbar span:last-child {
+    margin-top: 1.3rem;
+  }
+  .topNavbar {
+    margin-bottom: -1.7rem;
+  }
+
   .searcher-submit-btn {
     background-color: #232c3a;
     border: none;
@@ -87,20 +47,11 @@
   }
 }
 
-@media (max-width: 575px) {
-  .searcher-input {
-    margin-left: .15rem;
-    width: 126%;
-  }
-
-  .searcher-btn-wrapper {
-    right: -9%;
-  }
-}
-
-@media (max-width: 468px) {
-  .searcher-btn-wrapper {
-    right: -7%;
+@media (max-width: 767px) {
+  .banners-left,
+  .banners-center,
+  .banners-right {
+    padding: 0;
   }
 }
 
@@ -114,34 +65,6 @@
   }
 }
 
-@media (max-width: 425px) {
-  .searcher-input {
-    left: -7.4%;
-  }
-
-  .searcher-input {
-    width: 128.8%;
-  }
-
-  .searcher-btn-wrapper {
-    right: -3%;
-  }
-}
-
-@media (max-width: 375px) {
-  .searcher-input {
-    left: -8.4%;
-  }
-
-  .searcher-input {
-    width: 129.8%;
-  }
-
-  .searcher-btn-wrapper {
-    right: -3%;
-  }
-}
-
 @media (max-width: 361px) {
   .banner-center-top .banner-header {
     font-size: 1.1rem;
@@ -149,16 +72,6 @@
 
   .banner-center-top .banner-content {
     padding-right: 3rem;
-  }
-}
-
-@media (max-width: 331px) {
-  .searcher-input {
-    width: 132%;
-    left: -10%;
-  }
-  .searcher-submit-btn {
-    width: 45px;
   }
 }
 
@@ -173,12 +86,6 @@
 
   footer .right-col a:not(:first-child):not(:last-child) {
     margin: 1rem 0.83rem;
-  }
-}
-
-@media (max-width: 313px) {
-  .searcher-wrapper {
-    display: none;
   }
 }
 
