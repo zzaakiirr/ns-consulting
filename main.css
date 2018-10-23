@@ -148,6 +148,7 @@ a:link, a:visited {
 
 a[class*="banner-left"],
 a[class*="banner-right"],
+div[class*="banner-right"],
 .banner-center-center {
   margin-bottom: 1.3rem;
 }

@@ -113,12 +113,6 @@
   }
 }
 
-@media (max-width: 300px) {
-  .banner-center-top {
-    display: none;
-  }
-}
-
 @media (max-width: 991px) {
   footer .left-col {
     padding-left: 0;
