@@ -250,8 +250,7 @@ p.banner-header-2 {
   margin-bottom: 0;
 }
 
-.banners-right > div,
-.banners-right > a {
+.banners-right a, .poll {
   background-color: #f8f8f8;
 }
 
@@ -272,7 +271,7 @@ p.banner-header-2 {
   padding: 0 .4rem;
 }
 
-.banner-right-center .poll-choice {
+.poll-choice {
   margin-left: 1rem;
 }
 
