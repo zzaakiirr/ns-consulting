@@ -12,7 +12,7 @@ html {
   font-family: Intro-Book;
 }
 
-header .img-wrapper {
+.headerLG .img-wrapper, .headerMD .img-wrapper {
   background-image: url(src/img/header.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,8 +20,12 @@ header .img-wrapper {
   text-align: center;
 }
 
-.header .img-wrapper img {
-  margin: 3rem 0;
+.headerLG .img-wrapper img, .headerMD .img-wrapper {
+  padding: 3rem 0;
+}
+
+.headerMD {
+  margin-top: 2rem;
 }
 
 .navbar {
@@ -305,3 +309,5 @@ footer .right-col a:not(:first-child):not(:last-child) {
   display: inline-block;
   margin: 1rem 1rem;
 }
+
+.searchSmall {}
