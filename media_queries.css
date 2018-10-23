@@ -1,12 +1,19 @@
-@media (max-width: 1199px) {
-  .searcher-wrapper {
-    margin-left: -.8rem;
+@media (min-width: 1200px) {
+  .headerMD {
+    display: none;
   }
 }
-
-@media (max-width: 1153px) {
+@media (max-width: 1145px) {
+  #topNavbar span:last-child, #bottomNavbar span:last-child {
+    margin-top: 1.3rem;
+  }
+}
+@media (max-width: 991px) {
   .navbar span:last-child {
     margin-top: 1.3rem;
+  }
+  .topNavbar {
+    margin-bottom: -1.7rem;
   }
 }
 
@@ -68,11 +75,6 @@
 
   .navbar a:not(.logoSmall) {
     display: none;
-  }
-
-  .navbar a:hover {
-    border: none;
-    padding-bottom: 0;
   }
 
   .navbar .hamburger {

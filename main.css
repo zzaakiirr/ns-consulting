@@ -26,6 +26,7 @@ html {
 
 .headerMD {
   margin-top: 2rem;
+  margin-bottom: -.7rem;
 }
 
 .navbar {
@@ -47,8 +48,7 @@ a:link, a:visited {
 }
 
 .navbar a:hover, nav.is-active a:hover {
-  border-bottom: 0.3rem solid #fff;
-  padding-bottom: .6rem;
+  background-color: #439a86;
 }
 
 #topNavbarSM {
