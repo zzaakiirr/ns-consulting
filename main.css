@@ -38,14 +38,19 @@ html {
 
 .navbar a {
   color: #fff;
-  padding: 1rem 1.8rem;
+  padding: 1rem 1.83rem;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
 }
 
-a:link, a:visited {
+a:visited {
   text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  /* background-color: #439a86; */
 }
 
 .navbar a:hover, nav.is-active a:hover {
@@ -80,8 +85,8 @@ a:link, a:visited {
 }
 
 .searcher-wrapper {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: .7rem;
+  padding-right: .8rem;
 }
 
 .searcher-wrapper:hover .searcher-input {
@@ -108,7 +113,7 @@ a:link, a:visited {
   height: 100%;
   padding-left: 1.1rem;
   position: relative;
-  width: 107.4%;
+  width: 107%;
 }
 
 .searcher-submit-btn {
@@ -275,23 +280,18 @@ p.banner-header-2 {
 }
 
 .poll-choice {
-  margin-left: 1rem;
-}
-
-.submit-btn {
-  background-color: #232c3a;
-  border: none;
-  color: #fff;
-  font-family: Intro-Bold;
   font-size: 1rem;
-  max-width: 100%;
-  padding:  .5rem 0;
-  text-transform: uppercase;
-  width: 9999px;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background-color: #f8f8f8;
+  border: none;
+  width: 100%;
+  padding: .4rem 0;
 }
 
-.submit-btn:hover {
+.poll-choice:hover {
   cursor: pointer;
+  background-color: #439a86;
 }
 
 footer .left-col {
@@ -311,5 +311,3 @@ footer .right-col a:not(:first-child):not(:last-child) {
   display: inline-block;
   margin: 1rem 1rem;
 }
-
-.searchSmall {}
