@@ -1,3 +1,9 @@
+@media (min-width: 1200px) {
+  .searcher-wrapper {
+    padding-left: 1rem;
+    padding-right: .9rem;
+  }
+}
 @media (max-width: 1145px) {
   #topNavbar span:last-child, #bottomNavbar span:last-child {
     margin-top: 1.3rem;
@@ -51,6 +57,10 @@
   #bottomNavbar {
     display: none;
   }
+
+  footer .container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -79,14 +89,6 @@
   .poll-choice {
     margin-left: .5rem;
   }
-
-  .banner-center-top .banner-header {
-    font-size: 1.3rem;
-  }
-
-  .banner-center-top .banner-content {
-    padding-right: 4rem;
-  }
 }
 
 @media (max-width: 361px) {
@@ -106,10 +108,6 @@
 
   .banner-center-top .banner-content {
     padding-right: 1rem;
-  }
-
-  footer .right-col a:not(:first-child):not(:last-child) {
-    margin: 1rem 0.83rem;
   }
 }
 
