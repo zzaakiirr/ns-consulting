@@ -116,6 +116,11 @@ a:link {
   width: 107%;
 }
 
+.searcher-input::placeholder {
+  font-family: Intro-Book;
+  font-size: 1.1rem;
+}
+
 .searcher-submit-btn {
   background-color: #fff;
   border: none;
@@ -283,7 +288,6 @@ p.banner-header-2 {
   font-size: 1rem;
   margin-bottom: 1rem;
   border-radius: .5rem;
-  background-color: #f8f8f8;
   border: none;
   width: 100%;
   padding: .4rem 0;
@@ -292,6 +296,27 @@ p.banner-header-2 {
 .poll-choice:hover {
   cursor: pointer;
   background-color: #439a86;
+}
+
+.filled-poll-choice {
+  margin-bottom: 1rem;
+  background-color: #f8f8f8;
+  border-radius: .5rem;
+}
+
+.filled-poll-choice > div {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: .4rem;
+  width: 50%;
+  height: 100%;
+  background-color: #439a86;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.filled-poll-choice span {
+  visibility: hidden;
 }
 
 footer .left-col {
