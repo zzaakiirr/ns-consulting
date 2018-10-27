@@ -285,8 +285,9 @@ p.banner-header-2 {
 }
 
 .poll-choice {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  color: #000;
+  font-size: 1.1rem;
+  margin-bottom: 1.7rem;
   border-radius: .5rem;
   border: none;
   width: 100%;
