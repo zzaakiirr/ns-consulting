@@ -13,18 +13,30 @@
 </head>
 <body>
   <header>
-    <div class="row header">
+    <div class="row hidden-sm headerLG">
       <div class="col-xs-12 img-wrapper">
-        <img src="src/img/logo.png" alt="Logo">
+        <img src="src/img/logoLG.png" alt="Logo">
       </div>
     </div>
     <nav class="row center-xs navbar" id="topNavbar">
-      <div class="col-xs-12">
-        <button class="hamburger hamburger--spin" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+      <div class="col-xs-12 topNavbar">
+        <div class="row">
+          <div class="col-xs-4">
+            <button class="hamburger hamburger--spin" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+          <a href="" class="col-xs-4 logoSmall">
+            <img src="src/img/logoSmall.png" alt="logo">
+          </a>
+          <div class="col-xs-4 searchSmall end-xs">
+            <button type="submit" class="searcher-submit-btn">
+              <img src="src/img/loupe.png" alt="">
+            </button>
+          </div>
+        </div>
         <span><a href="">Главная</a></span>
         <span><a href="">О союзе</a></span>
         <span><a href="">Услуги</a></span>
@@ -58,10 +70,15 @@
       </div>
     </nav>
   </header>
+  <div class="row hidden-lg hidden-xl headerMD">
+    <div class="col-xs-12 img-wrapper">
+      <img src="src/img/logoMD.png" alt="Logo">
+    </div>
+  </div>
   <div class="container main">
-    <div class="row start-xs center-md searcher-wrapper">
+    <div class="row start-xs center-md hidden-xs hidden-md hidden-sm searcher-wrapper">
       <div class="col-xs-10 col-sm-9 col-md-11 searcher-input-wrapper">
-        <input type="text" class="searcher-input">
+        <input type="text" placeholder="Поиск..." class="searcher-input">
       </div>
       <div class="col-xs-1 end-xs col-sm-1 col-md-1 searcher-btn-wrapper">
         <button type="submit" class="searcher-submit-btn">
@@ -70,8 +87,23 @@
       </div>
     </div>
     <div class="row banners">
-      <div class="col-lg-3">
-        <div class="row center-xs banners-left">
+      <div class="col-lg-3 hidden-md hidden-lg hidden-xl banners-right">
+        <div class="row center-xs">
+          <a href="" class="col-xs-12 col-md-12 col-lg-10 banner-right-top">
+            <img src="src/img/banner-right-top.png" alt="">
+            <div class="banner-content">
+              <p href="" class="banner-header-2">
+                Lorem ipsum dolor sit amet
+              </p>
+              <p class="banner-text">
+                date date date
+              </p>
+            </div>
+          </a> 
+        </div>
+      </div>
+      <div class="col-xs-6 col-lg-3 last-xs last-sm first-md hidden-md banners-left">
+        <div class="row center-xs">
           <a href="" class="col-xs-12 col-md-12 col-lg-10 banner-left-top">
             <div class="banner-content">
               <p class="banner-header">Актуально</p>
@@ -98,8 +130,8 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="row center-xs banners-center">
+      <div class="col-md-8 col-lg-6 banners-center">
+        <div class="row center-xs">
           <a href="" class="col-xs-12 start-xs banner-center-top text-under-img-wrapper">
             <img src="src/img/banner-center-top.png">
             <div class="banner-content">
@@ -120,9 +152,9 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-3">
-        <div class="row center-xs banners-right">
-          <a href="" class="col-xs-12 col-md-12 col-lg-10 banner-right-top">
+      <div class="col-xs-6 col-md-4 col-lg-3 last-xs banners-right">
+        <div class="row center-xs">
+          <a href="" class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm banner-right-top">
             <img src="src/img/banner-right-top.png" alt="">
             <div class="banner-content">
               <p href="" class="banner-header-2">
@@ -133,7 +165,7 @@
               </p>
             </div>
           </a>
-          <div class="col-xs-12 col-md-12 col-lg-10 banner-right-center">
+          <div class="col-xs-12 col-md-12 col-lg-10 banner-right-center poll">
             <div class="banner-content">
               <p class="banner-header">
                 Lorem
@@ -141,21 +173,49 @@
               <p class="banner-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. deleniti tenetur?
               </p>
-              <p class="start-xs poll-choice">
-                <input type="radio" id="poll-choice-1" value="yes">
-                <label for="poll-choice-1">Да</label>
-              </p>
-              <p class="start-xs poll-choice">
-                <input type="radio" id="poll-choice-2" value="no">
-                <label for="poll-choice-2">Нет</label>
-              </p>
-              <p class="start-xs poll-choice">
-                <input type="radio" id="poll-choice-3" value="ns">
-                <label for="poll-choice-3">Затрудняюсь ответить</label>
+              <div class="row">
+                <div class="col-xs-12">
+                  <button class="poll-choice">Да</button>
+                </div>
+                <div class="col-xs-12">
+                  <button class="poll-choice">Нет</button>
+                </div>
+                <div class="col-xs-12">
+                  <button class="poll-choice">Затрудняюсь ответить</button>
+                </div>
+                <div class="col-xs-12">
+                  Да
+                  <div class="filled-poll-choice">
+                    <div class="col-xs-12 start-xs">50%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-top">
+            <div class="banner-content">
+              <p class="banner-header">Актуально</p>
+              <img src="src/img/banner-left-top.png" alt="banner1-img">
+              <p href="" class="banner-text">
+                Гос. программа РФ "Развитие здравоохранения" 2018-2025 гг.
               </p>
             </div>
-            <button class="submit-btn">ответить</button>
-          </div>
+          </a>
+          <a href="" class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-center">
+            <div class="banner-content">
+              <p class="banner-header">Lorem ipsum</p>
+              <p class="banner-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sit odio culpa enim at, labore, earum tempore
+              </p>
+              <p class="angle-down"></p>
+            </div>
+          </a>
+          <a href="" class="col-xs-12 col-md-12 col-lg-10 hidden-xs hidden-sm hidden-lg hidden-xl banner-left-bottom text-under-img-wrapper">
+            <img src="src/img/banner-left-bottom.png">
+            <div class="banner-content">
+              <p href="" class="banner-header">Lorem ipsum dolor sit amet</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -171,7 +231,7 @@
       <span><a href="">Партнеры</a></span>
     </div>
   </nav>
-  <footer>
+  <footer class="hidden-xs">
     <div class="container">
       <div class="row middle-xs footer-cols">
         <div class="col-xs-12 col-md-6 col-lg-6 left-col middle-xs">
